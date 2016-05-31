@@ -1,4 +1,4 @@
-# MEAN Coffee Shops NYC
+# MEAN Coffee Beans NYC
 
 ## Application for commenting on coffee shops in the NYC area build with the MEAN stack.
 
