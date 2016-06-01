@@ -1,8 +1,26 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: white;
 }
 
 a {
   color: #00B7FF;
+}
+.background-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  /*display: block;*/
+  background-image: url('/images/coffee_beans.jpeg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -o-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
 }
