@@ -3,10 +3,17 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: white;
 }
-
 a {
   color: #00B7FF;
 }
+/*.delete {
+  color: #e0301e;
+}*/
+/*.blur-grey {
+  background: rgba(70, 70, 70, 0.5);
+  padding-left: .5em;
+  padding-right: .5em;
+}*/
 .background-image {
   position: fixed;
   left: 0;
