@@ -4,10 +4,10 @@
     <title>MEAN Coffee Beans</title>
     <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/stylesheets/style.css">
-
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
     <script src="/javascripts/angularApp.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style> .glyphicon-thumbs-up, .glyphicon-thumbs-down { cursor:pointer } </style>
   </head>
   <body ng-app="meanCoffee">
@@ -30,7 +30,7 @@
           {{post.votes}}
         <span class="glyphicon glyphicon-thumbs-down" ng-click="downvote(post)"></span>
         <span style="font-size:20px;margin-left:10px">
-          <a ng-show="post.link" ng-href="{{post.link}}" target="_self">
+          <a class="name" ng-show="post.link" ng-href="{{post.link}}" target="_blank">
             {{post.title}}
           </a>
           <span ng-hide="post.link">

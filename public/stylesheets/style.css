@@ -9,6 +9,9 @@ a {
 /*.delete {
   color: #e0301e;
 }*/
+.name {
+  color: white;
+}
 /*.blur-grey {
   background: rgba(70, 70, 70, 0.5);
   padding-left: .5em;
@@ -16,8 +19,8 @@ a {
 }*/
 .background-image {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
 
   /*display: block;*/
   background-image: url('/images/coffee_beans.jpeg');
@@ -25,9 +28,9 @@ a {
   height: 100vh;
   width: 100vw;
 
-  -webkit-filter: blur(4px);
+  /*-webkit-filter: blur(4px);
   -moz-filter: blur(4px);
   -o-filter: blur(4px);
   -ms-filter: blur(4px);
-  filter: blur(4px);
+  filter: blur(4px);*/
 }
