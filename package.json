@@ -2,7 +2,9 @@
   "name": "mean-coffee",
   "version": "0.0.0",
   "private": true,
+  "description": "A MEAN app that allows users to comment on coffee shops",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -11,6 +13,7 @@
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "mongodb": "^2.1.6",
     "mongoose": "^4.4.19",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"

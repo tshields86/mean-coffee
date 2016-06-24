@@ -4,10 +4,24 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
-// MongoDB
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/news');
+
+//For Heroku Mongo
+var uristring =
+process.env.MONGOLAB_URI ||
+process.env.MONGOHQ_URL ||
+'mongodb://localhost/news';
+
+// // MongoDB
+// mongoose.connect('mongodb://localhost/news');
+mongoose.connect(uristring, function (err, res) {
+  if (err) {
+  console.log ('ERROR connecting to: ' + uristring + '. ' + err);
+  } else {
+  console.log ('Succeeded connected to: ' + uristring);
+  }
+});
+
 require('./models/Posts');
 require('./models/Comments');
 

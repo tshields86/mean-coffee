@@ -1,14 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
+var mongoose = require('mongoose');
+var Post = mongoose.model('Post'); //loads post model
+var Comment = mongoose.model('Comment'); //loads comment model
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
-
-var mongoose = require('mongoose');
-var Post = mongoose.model('Post'); //loads post model
-var Comment = mongoose.model('Comment'); //loads comment model
 
 // Rest Routes
 // Get all posts
