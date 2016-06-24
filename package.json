@@ -3,9 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "description": "A MEAN app that allows users to comment on coffee shops",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./bin/www"
+    "start": "node index.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
